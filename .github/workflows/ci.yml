@@ -38,3 +38,7 @@ jobs:
 
       - name: Check code style
         run: test -z $(go fmt ./...)
+
+      - uses: dominikh/staticcheck-action@v1
+        with:
+          version: "latest"
